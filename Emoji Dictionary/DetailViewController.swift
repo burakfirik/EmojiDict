@@ -1,39 +1,22 @@
-//
-//  DetailViewController.swift
-//  Emoji Dictionary
-//
-//  Created by Burak Firik on 11/28/17.
-//  Copyright © 2017 Code Path. All rights reserved.
-//
 
 import UIKit
 
 class DetailViewController: UIViewController {
   
-    var emoji = ""
+  var emoji =  Emoji()
   
   @IBOutlet weak var emojiLabel: UILabel!
   @IBOutlet weak var emojiDef: UILabel!
+  @IBOutlet weak var birthLabel: UILabel!
+  @IBOutlet weak var categoryLabel: UILabel!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-      emojiLabel.text = emoji
-      // ["✊🏻", "👄", "🧠", "🤜🏻", "🙌🏼","👀", "🎯"]
-      if (emoji == "✊🏻") {
-        emojiDef.text = "Hand Ok!"
-      }
-      
-      if emoji == "👄" {
-        emojiDef.text = "Smiley face"
-      }
-      
-      if emoji == "🧠" {
-        emojiDef.text = "Brain"
-      }
-      
-      if emoji == "🤜🏻" {
-        emojiDef.text = "Punch"
-      }
-        // Do any additional setup after loading the view.
+      emojiLabel.text = emoji.theEmoji
+      emojiDef.text = emoji.explanation
+      birthLabel.text = "Birth Yer: \(emoji.birthYear)"
+      categoryLabel.text = "Category: \(emoji.category)"
+    
     }
 
     override func didReceiveMemoryWarning() {

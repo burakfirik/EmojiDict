@@ -66,7 +66,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A race car sponsored by Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofb-vt-CC0">
-                                <rect key="frame" x="26" y="636" width="323" height="21"/>
+                                <rect key="frame" x="26" y="636.5" width="323" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="FtS-eh-Xyb"/>
                                 </constraints>
@@ -74,18 +74,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0w-M0-bcx">
+                                <rect key="frame" x="127" y="602" width="122" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="npa-gn-nJN">
+                                <rect key="frame" x="91.5" y="571.5" width="192" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Transportation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnn-k5-UH5">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JgK-4K-dfj" firstAttribute="centerX" secondItem="aZw-9I-DdH" secondAttribute="centerX" id="3Ko-2T-xzc"/>
                             <constraint firstItem="Ofb-vt-CC0" firstAttribute="leading" secondItem="aZw-9I-DdH" secondAttribute="leadingMargin" constant="10" id="8Di-FE-n6i"/>
+                            <constraint firstItem="C0w-M0-bcx" firstAttribute="centerX" secondItem="aZw-9I-DdH" secondAttribute="centerX" id="D4T-QI-krH"/>
+                            <constraint firstItem="Ofb-vt-CC0" firstAttribute="top" secondItem="C0w-M0-bcx" secondAttribute="bottom" constant="14" id="Gid-81-CjL"/>
                             <constraint firstItem="NrN-Gv-IOp" firstAttribute="top" secondItem="Ofb-vt-CC0" secondAttribute="bottom" constant="10" id="M46-aA-OjA"/>
+                            <constraint firstItem="C0w-M0-bcx" firstAttribute="top" secondItem="npa-gn-nJN" secondAttribute="bottom" constant="10" id="MRh-s6-uHT"/>
                             <constraint firstItem="JgK-4K-dfj" firstAttribute="centerX" secondItem="aZw-9I-DdH" secondAttribute="centerX" id="T2q-PT-LVq"/>
+                            <constraint firstItem="npa-gn-nJN" firstAttribute="centerX" secondItem="aZw-9I-DdH" secondAttribute="centerX" id="brT-wY-NR3"/>
                             <constraint firstItem="JgK-4K-dfj" firstAttribute="top" secondItem="ivV-Rs-9aG" secondAttribute="bottom" constant="20" id="xHc-KQ-ntn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ofb-vt-CC0" secondAttribute="trailing" constant="10" id="yhd-78-6Jk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthLabel" destination="C0w-M0-bcx" id="I8K-H2-jxj"/>
+                        <outlet property="categoryLabel" destination="Mnn-k5-UH5" id="Kso-za-HEV"/>
                         <outlet property="emojiDef" destination="Ofb-vt-CC0" id="YIA-rM-0Rt"/>
                         <outlet property="emojiLabel" destination="JgK-4K-dfj" id="vry-hO-hAF"/>
                     </connections>
