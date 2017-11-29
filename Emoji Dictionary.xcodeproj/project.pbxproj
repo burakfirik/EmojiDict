@@ -13,6 +13,7 @@
 		AE5FBC3D1FCCF91100730230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5FBC3B1FCCF91100730230 /* LaunchScreen.storyboard */; };
 		AE5FBC481FCCF91100730230 /* Emoji_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5FBC471FCCF91100730230 /* Emoji_DictionaryTests.swift */; };
 		AE5FBC531FCCFA3B00730230 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5FBC521FCCFA3B00730230 /* EmojiTableViewController.swift */; };
+		AE5FBC5B1FCE592F00730230 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5FBC5A1FCE592F00730230 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		AE5FBC471FCCF91100730230 /* Emoji_DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_DictionaryTests.swift; sourceTree = "<group>"; };
 		AE5FBC491FCCF91100730230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5FBC521FCCFA3B00730230 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojiTableViewController.swift; path = ../EmojiTableViewController.swift; sourceTree = "<group>"; };
+		AE5FBC5A1FCE592F00730230 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		AE5FBC311FCCF91100730230 /* Emoji Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				AE5FBC5A1FCE592F00730230 /* DetailViewController.swift */,
 				AE5FBC521FCCFA3B00730230 /* EmojiTableViewController.swift */,
 				AE5FBC321FCCF91100730230 /* AppDelegate.swift */,
 				AE5FBC361FCCF91100730230 /* Main.storyboard */,
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5FBC5B1FCE592F00730230 /* DetailViewController.swift in Sources */,
 				AE5FBC531FCCFA3B00730230 /* EmojiTableViewController.swift in Sources */,
 				AE5FBC331FCCF91100730230 /* AppDelegate.swift in Sources */,
 			);
